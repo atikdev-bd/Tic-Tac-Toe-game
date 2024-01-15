@@ -50,21 +50,24 @@ function Board() {
 
   return (
     <>
-      <div className="font-bold ms-2 ">{status}</div>
-      <div className="flex">
+      <div className="font-bold ms-2 text-center m-2">{status}</div>
+      <div className="flex justify-center">
         <Square value={squares[0]} clickEvent={() => handleClick(0)} />
         <Square value={squares[1]} clickEvent={() => handleClick(1)} />
         <Square value={squares[2]} clickEvent={() => handleClick(2)} />
       </div>
-      <div className="flex">
+      <div className="flex justify-center">
         <Square value={squares[3]} clickEvent={() => handleClick(3)} />
         <Square value={squares[4]} clickEvent={() => handleClick(4)} />
         <Square value={squares[5]} clickEvent={() => handleClick(5)} />
       </div>
-      <div className="flex">
+      <div className="flex justify-center">
         <Square value={squares[6]} clickEvent={() => handleClick(6)} />
         <Square value={squares[7]} clickEvent={() => handleClick(7)} />
         <Square value={squares[8]} clickEvent={() => handleClick(8)} />
+      </div>
+      <div className="text-2xl font-bold text-center">
+        <span className="text-red-600">Love</span> With Atikur
       </div>
     </>
   );
